@@ -15,86 +15,102 @@
     font-style: normal;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 /* colors */
-.orange{
+.orange {
     color: orange;
 }
-.orangeB{
+
+.orangeB {
     background-color: orange;
 }
-.skyBlue{
-    color: skyblue;
+
+.skyBlue {
+    color: #01ACFD;
 }
-.skyBlueB{
+
+.skyBlueB {
     background-color: skyblue;
 }
-.paste{
+
+.paste {
     color: #05D4DF;
 }
-.pasteB{
+
+.pasteB {
     background-color: #05D4DF;
 }
-.purple{
+
+.purple {
     color: #5D58EF;
 }
-.purpleB{
+
+.purpleB {
     background-color: #5D58EF;
 }
+
 /* colors */
 
-nav{
+nav {
     width: 100vw;
     padding: 20px 0;
 }
-.navigationBar{
-    width: 90%;
+
+.navigationBar {
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
 }
-.nameLogo{
+
+.nameLogo {
     width: 9%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.navLogo{
 
-}
-.navName{
+.navName {
     font-size: 2.5rem;
     font-weight: 650;
 }
-.navItemContainer{
-    width: 25%;
+
+.navItemContainer {
+    width: 35%;
     font-size: 1.4rem;
 }
-.navItems{
+
+.navItems {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.navItems li{
+
+.navItems li {
     list-style: none;
 }
-.navLinks{
+
+.navLinks {
     text-decoration: none;
 }
-.navContact ul{
-    
+
+.navContact ul {
+
     display: flex;
     align-items: center;
-    li{
+
+    li {
         list-style: none;
     }
 }
-.contactButton{
+
+.contactButton {
     font-size: 1.4rem;
     padding: 10px 35px;
     font-weight: 700;
@@ -103,8 +119,44 @@ nav{
     background-color: orange;
     color: white;
 }
-.menu{
+
+.menu {
     display: none;
+}
+
+.banner {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.bannerInformation {
+    width: 60%;
+}
+.bannerTitle{
+    width: 65%;
+    margin: 10px 0;
+    font-size: 3.5rem;
+}
+.bannerDescription{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+.btn{
+    color: white;
+    background-color: black;
+    padding: 10px 35px;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+.bannerImage {
+    width: 35%;
+    img{
+        width: 100%;
+    }
 }
 
 
@@ -127,7 +179,32 @@ nav{
 
 
 @media screen and (max-width:576px) {
-    .navName, .navItemContainer, .menu{
+
+    .navName,
+    .navItemContainer,
+    .menu {
         display: none;
+    }
+
+    .navigationBar {
+        width: 90%;
+    }
+    .banner{
+        width: 90%;
+        flex-direction: column-reverse;
+    }
+    .bannerInformation{
+        width: 100%;
+        text-align: center;
+    }
+    .bannerTitle{
+        width: 100%;
+        font-size: 2.8rem;
+    }
+    .bannerDescription{
+        font-size: 1.2rem;
+    }
+    .bannerImage{
+        width: 100%;
     }
 }
