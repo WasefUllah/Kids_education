@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.quicksand {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.raleway {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* colors */
+.orange{
+    color: orange;
+}
+.orangeB{
+    background-color: orange;
+}
+.skyBlue{
+    color: skyblue;
+}
+.skyBlueB{
+    background-color: skyblue;
+}
+.paste{
+    color: #05D4DF;
+}
+.pasteB{
+    background-color: #05D4DF;
+}
+.purple{
+    color: #5D58EF;
+}
+.purpleB{
+    background-color: #5D58EF;
+}
+/* colors */
+
+nav{
+    width: 100vw;
+    padding: 20px 0;
+}
+.navigationBar{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.nameLogo{
+    width: 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navLogo{
+
+}
+.navName{
+    font-size: 2.5rem;
+    font-weight: 650;
+}
+.navItemContainer{
+    width: 25%;
+    font-size: 1.4rem;
+}
+.navItems{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navItems li{
+    list-style: none;
+}
+.navLinks{
+    text-decoration: none;
+}
+.navContact ul{
+    
+    display: flex;
+    align-items: center;
+    li{
+        list-style: none;
+    }
+}
+.contactButton{
+    font-size: 1.4rem;
+    padding: 10px 35px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    background-color: orange;
+    color: white;
+}
+.menu{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    .navName, .navItemContainer, .menu{
+        display: none;
+    }
+}
