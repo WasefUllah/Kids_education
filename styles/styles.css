@@ -50,10 +50,27 @@
     background-color: #5D58EF;
 }
 
+.buttonColor1 {
+    background-color: #3CD8E8;
+}
+
+.buttonColor2 {
+    background-color: #95B226;
+}
+
+.buttonColor3 {
+    background-color: #5D58F0;
+}
+
+.descriptionColor {
+    color: #666666;
+}
+
 /* colors */
-body{
+body {
     max-width: 100vw;
 }
+
 nav {
     max-width: 100vw;
     padding: 20px 0;
@@ -170,7 +187,7 @@ main {
 
 .standardCurriculum {
     padding-top: 50px;
-    width:100%;
+    width: 100%;
     background-image: url('../assets/bg.png');
     background-size: cover;
     background-repeat: repeat-y;
@@ -198,7 +215,8 @@ main {
     height: 55vh;
     border-radius: 10px;
     text-align: center;
-    img{
+
+    img {
         height: 105px;
     }
 }
@@ -246,16 +264,21 @@ main {
     border: none;
 }
 
-.ourStories{
-    background-image: url('../assets/bg.png');
+.ourStories {
+    background-image: url('../assets/bg.png'), linear-gradient(to top, #fea10156, white, white);
     width: 100%;
     text-align: center;
-    padding: 50px 0;
-    h1{
+    padding: 50px 0 70px 0;
+
+    h1 {
         font-size: 3rem;
     }
+
+    /* background-image: ; */
 }
-.storiesContainer{
+
+.storiesContainer {
+    padding-top: 25px;
     width: 75%;
     margin: 0 auto;
     display: flex;
@@ -263,37 +286,108 @@ main {
     align-items: center;
     border-radius: 10px;
 }
-.bigStory{
-    width: 47%;
+
+.bigStory {
+    width: 49%;
 }
-.imgPart{
+
+.imgPart {
+    position: relative;
     width: 100%;
-    z-index: 40;
-    img{
+
+    /* z-index: 40; */
+    img {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         width: 100%;
     }
 }
-.buttonContainer{
+
+/* .buttonContainer{
     z-index: 500;
     
     width: 45%;
     margin-top: -50px;
-}
-.middleButton{
-    background-color: rgba(0, 0, 255, 0.318);
+} */
+.middleButton {
+    position: absolute;
+    font-size: 1.1rem;
+    font-weight: 400;
     padding: 15px 35px;
-    z-index: 50;
-    border-radius: 10px;
+    z-index: 10;
+    border-radius: 50px;
+    top: 90%;
+    left: 5%;
+    color: white;
+    border: none;
 }
-.textPart{
-    z-index: 40;
+
+.textPart {
+    padding: 20px;
+    background-color: white;
     text-align: left;
-    /* padding-right:20px; */
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
-.miniStories{
-    width: 48%;
+
+.storyTilte {
+    font-size: 2rem;
+}
+
+.storyDescription {
+    font-size: 1.2rem;
+}
+
+.miniStoriesContainer {
+    width: 49%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.miniStories {}
+
+.storyTilteMini {
+    font-size: 1.5rem;
+}
+
+.imgPartMini {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    
+
+    img {
+        border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.textPartMini {
+    text-align: left;
+    height: 40%;
+    padding: 5px 15px 0 15px;
+    font-size: 0.9rem;
+    background-color: white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* box-shadow: 0 4px 30px red; */
+}
+
+.middleButtonMini {
+    position: absolute;
+    font-size: .8rem;
+    font-weight: 400;
+    padding: 10px 15px;
+    z-index: 10;
+    border-radius: 50px;
+    top: 90%;
+    left: 5%;
+    border: none;
 }
 
 
@@ -332,9 +426,11 @@ main {
     .contactButton {
         display: none;
     }
-    .menu{
+
+    .menu {
         display: flex;
     }
+
     .navigationBar {
         width: 90%;
         /* display: flex;
@@ -364,13 +460,16 @@ main {
     .bannerImage {
         width: 100%;
     }
-    .curriculumBoxContainer{
+
+    .curriculumBoxContainer {
         flex-direction: column;
     }
-    .curriculumBox{
+
+    .curriculumBox {
         width: calc(100% - 40px);
         margin-bottom: 10px;
     }
+
     .curriculum_title {
         padding-top: 30px;
         padding-bottom: 40px;
