@@ -139,9 +139,12 @@ nav {
 .menu {
     display: none;
 }
-
+*{
+    margin: 0;
+    padding: 0;
+}
 main {
-    width: 98vw;
+    width: 98.8vw;
     margin: 0 auto;
 }
 
@@ -264,11 +267,24 @@ main {
     border: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 .ourStories {
-    background-image: url('../assets/bg.png'), linear-gradient(to top, #fea10156, white, white);
+    background-image: url('../assets/bg.png'), linear-gradient(to top, #fea10156, white);
     width: 100%;
+    background-size: cover;
     text-align: center;
-    padding: 50px 0 70px 0;
+    padding: 50px 0 20px 0;
 
     h1 {
         font-size: 3rem;
@@ -278,12 +294,13 @@ main {
 }
 
 .storiesContainer {
-    padding-top: 25px;
+    /* padding-top: 25px; */
+    /* margin-bottom: 80px; */
     width: 75%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     border-radius: 10px;
 }
 
@@ -340,14 +357,15 @@ main {
 
 .miniStoriesContainer {
     width: 49%;
-    height: 600px;
+    height: 520px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
+    gap: 15px;
 }
 
-.miniStories {}
+.miniStories {
+}
 
 .storyTilteMini {
     font-size: 1.5rem;
@@ -357,11 +375,11 @@ main {
     position: relative;
     width: 100%;
     height: 60%;
-    
+
 
     img {
         border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+        border-top-right-radius: 10px;
         width: 100%;
         height: 100%;
     }
@@ -369,13 +387,17 @@ main {
 
 .textPartMini {
     text-align: left;
-    height: 40%;
-    padding: 5px 15px 0 15px;
+    height: auto;
+    padding: 20px 15px 0 15px;
     font-size: 0.9rem;
     background-color: white;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    padding-bottom: 20px;
     /* box-shadow: 0 4px 30px red; */
+    h2{
+        padding-top: 5px;
+    }
 }
 
 .middleButtonMini {
@@ -388,6 +410,9 @@ main {
     top: 90%;
     left: 5%;
     border: none;
+}
+.extra{
+    margin-top: 50px;
 }
 
 
@@ -420,10 +445,13 @@ main {
 
 
 @media screen and (max-width:576px) {
-
+    main{
+        width: 96.5vw;
+    }
     .navName,
     .navItemContainer,
-    .contactButton {
+    .contactButton,
+    .bigStory {
         display: none;
     }
 
@@ -475,4 +503,34 @@ main {
         padding-bottom: 40px;
         font-size: 2rem;
     }
+    .storiesContainer{
+        margin-top: 15px;
+        width: calc(100% - 40px);
+    }
+    .miniStoriesContainer{
+        width: 100%;
+    }
+    .textPartMini{
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+    .extra{
+        margin-top: 90px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 }
