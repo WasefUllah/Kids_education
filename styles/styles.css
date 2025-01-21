@@ -246,6 +246,59 @@ main {
     border: none;
 }
 
+.ourStories{
+    background-image: url('../assets/bg.png');
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    h1{
+        font-size: 3rem;
+    }
+}
+.storiesContainer{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+.bigStory{
+    width: 47%;
+}
+.imgPart{
+    width: 100%;
+    z-index: 40;
+    img{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 100%;
+    }
+}
+.buttonContainer{
+    z-index: 500;
+    
+    width: 45%;
+    margin-top: -50px;
+}
+.middleButton{
+    background-color: rgba(0, 0, 255, 0.318);
+    padding: 15px 35px;
+    z-index: 50;
+    border-radius: 10px;
+}
+.textPart{
+    z-index: 40;
+    text-align: left;
+    /* padding-right:20px; */
+}
+.miniStories{
+    width: 48%;
+}
+
+
+
+
 
 
 
