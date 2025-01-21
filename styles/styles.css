@@ -147,7 +147,24 @@ main {
     width: 98.8vw;
     margin: 0 auto;
 }
-
+.contactButton:hover, .specialButton:hover{
+    background-color: rgba(255, 68, 0, 0.727);
+    color: black;
+}
+.navLinks:hover, .curriculumLink:hover{
+    color: rgb(232, 20, 55);
+}
+.middleButtonMini:hover, .middleButton:hover{
+    background-color: wheat;
+    color: rgba(0, 0, 0, 0.811);
+}
+.btn:hover{
+    background-color: #666666;
+    color: wheat;
+}
+.boxShadow{
+    box-shadow: 1px 4px 15px #666666;
+}
 .banner {
     width: 80%;
     display: flex;
@@ -161,7 +178,7 @@ main {
 }
 
 .bannerTitle {
-    width: 65%;
+    width: 75%;
     margin: 10px 0;
     font-size: 3.5rem;
 }
@@ -305,35 +322,31 @@ main {
 }
 
 .bigStory {
-    width: 49%;
+    width: 48%;
 }
 
 .imgPart {
     position: relative;
     width: 100%;
-
-    /* z-index: 40; */
+    height: 350px;
     img {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         width: 100%;
+        height: 100%;
+        
     }
 }
 
-/* .buttonContainer{
-    z-index: 500;
-    
-    width: 45%;
-    margin-top: -50px;
-} */
+
 .middleButton {
     position: absolute;
     font-size: 1.1rem;
     font-weight: 400;
-    padding: 15px 35px;
+    padding: 10px 35px;
     z-index: 10;
     border-radius: 50px;
-    top: 90%;
+    top: 94%;
     left: 5%;
     color: white;
     border: none;
@@ -352,12 +365,13 @@ main {
 }
 
 .storyDescription {
-    font-size: 1.2rem;
+    font-size: .9rem;
+    padding-top: 8px;
+    padding-bottom: 25px;
 }
 
 .miniStoriesContainer {
     width: 49%;
-    height: 520px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -365,10 +379,14 @@ main {
 }
 
 .miniStories {
+    width: 100%;
+    height: 270px;
 }
 
 .storyTilteMini {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
 .imgPartMini {
@@ -387,23 +405,24 @@ main {
 
 .textPartMini {
     text-align: left;
-    height: auto;
-    padding: 20px 15px 0 15px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    height: 40%;
+    /* padding: 0px 15px 0 0px; */
     font-size: 0.9rem;
     background-color: white;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    padding-bottom: 20px;
-    /* box-shadow: 0 4px 30px red; */
+    /* padding-bottom: 20px; */
     h2{
         padding-top: 5px;
     }
 }
 
 .middleButtonMini {
+    color: white;
     position: absolute;
     font-size: .8rem;
-    font-weight: 400;
+    font-weight: 500;
     padding: 10px 15px;
     z-index: 10;
     border-radius: 50px;
@@ -414,6 +433,61 @@ main {
 .extra{
     margin-top: 50px;
 }
+
+footer{
+    width: 100%;    
+    background-color:#01ACFD;
+    /* height: auto; */
+
+}
+.footerInfo{
+    color: white;
+    width: 75%;
+    padding: 50px 0;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footerDescription{
+    width: 300px;
+    text-align: left;
+}
+.footerTitle{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin-bottom: 15px;
+    h2{
+        padding-top: 8px;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+}
+
+.aboutScool{
+    text-align: left;
+}
+.aboutScool > h1{
+    margin-bottom: 15px;
+}
+.aboutScool > ul > li{
+    
+    list-style: none;
+    margin-bottom: 10px;
+}
+.images > img{
+    padding-right: 5px;
+}
+.contactUs{
+    text-align: left;
+}
+.contactUs > h1{
+    margin-bottom: 15px;
+}
+
 
 
 
@@ -507,17 +581,34 @@ main {
         margin-top: 15px;
         width: calc(100% - 40px);
     }
+    .storyTilteMini{
+        font-size: 1.1rem;
+    }
+    .middleButtonMini{
+        padding: 5px 5px;
+    }
     .miniStoriesContainer{
         width: 100%;
+    }
+    .miniStories{
+        margin-bottom: 20px;
     }
     .textPartMini{
         padding-top: 15px;
         padding-bottom: 5px;
     }
     .extra{
-        margin-top: 90px;
+        margin-top: 60px;
     }
-    
+    .footerInfo{
+        flex-direction: column;
+    }
+    .lastWords{
+        margin-bottom: 30px;
+    }
+    .aboutScool > ul{
+        margin-bottom: 30px;
+    }
 
 
 
