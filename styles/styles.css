@@ -15,10 +15,7 @@
     font-style: normal;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
+
 
 /* colors */
 .orange {
@@ -83,7 +80,7 @@ nav {
 }
 
 .navItemContainer {
-    width: 35%;
+    width: 45%;
     font-size: 1.4rem;
 }
 
@@ -127,7 +124,8 @@ nav {
 }
 
 main {
-    width: 100vw;
+    width: 98vw;
+    margin: 0 auto;
 }
 
 .banner {
@@ -172,7 +170,7 @@ main {
 
 .standardCurriculum {
     padding-top: 50px;
-    width: 100%;
+    width:100%;
     background-image: url('../assets/bg.png');
     background-size: cover;
     background-repeat: repeat-y;
@@ -195,11 +193,14 @@ main {
 }
 
 .curriculumBox {
-    padding: 85px 15px 20px 15px;
+    padding: 65px 15px 20px 15px;
     width: 25%;
-    height: 330px;
+    height: 55vh;
     border-radius: 10px;
     text-align: center;
+    img{
+        height: 105px;
+    }
 }
 
 .custom1 {
@@ -275,12 +276,17 @@ main {
 
     .navName,
     .navItemContainer,
-    .menu {
+    .contactButton {
         display: none;
     }
-
+    .menu{
+        display: flex;
+    }
     .navigationBar {
         width: 90%;
+        /* display: flex;
+        justify-content: space-between;
+        align-items: center; */
     }
 
     .banner {
