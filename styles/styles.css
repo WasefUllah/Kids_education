@@ -549,7 +549,8 @@ footer {
         flex-direction: column;
     }
 
-    .standardCurriculum {
+    .standardCurriculum,
+    .ourStories {
         background-size: contain;
 
     }
