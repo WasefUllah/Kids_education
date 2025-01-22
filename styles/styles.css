@@ -134,37 +134,49 @@ nav {
     border: none;
     background-color: orange;
     color: white;
+    cursor: pointer;
 }
 
 .menu {
     display: none;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
+
 main {
     width: 100%;
     margin: 0 auto;
 }
-.contactButton:hover, .specialButton:hover{
+
+.contactButton:hover,
+.specialButton:hover {
     background-color: rgba(255, 68, 0, 0.727);
     color: black;
 }
-.navLinks:hover, .curriculumLink:hover{
+
+.navLinks:hover,
+.curriculumLink:hover {
     color: rgb(232, 20, 55);
 }
-.middleButtonMini:hover, .middleButton:hover{
+
+.middleButtonMini:hover,
+.middleButton:hover {
     background-color: wheat;
     color: rgba(0, 0, 0, 0.811);
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #666666;
     color: wheat;
 }
-.boxShadow{
+
+.boxShadow {
     box-shadow: 1px 4px 15px #666666;
 }
+
 .banner {
     width: 80%;
     display: flex;
@@ -195,6 +207,7 @@ main {
     border: none;
     font-size: 1.5rem;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .bannerImage {
@@ -282,20 +295,22 @@ main {
     background-color: orange;
     border-radius: 50px;
     border: none;
+    cursor: pointer;
 }
+
 .ourStories {
     background-image: url('../assets/bg.png'), linear-gradient(to top, #fea10156, white);
     width: 100%;
     background-size: cover;
     text-align: center;
     padding: 50px 0 20px 0;
+
     h1 {
         font-size: 3rem;
     }
 }
+
 .storiesContainer {
-    /* padding-top: 25px; */
-    /* margin-bottom: 80px; */
     width: 75%;
     margin: 0 auto;
     display: flex;
@@ -303,13 +318,16 @@ main {
     align-items: flex-start;
     border-radius: 10px;
 }
+
 .bigStory {
     width: 48%;
 }
+
 .imgPart {
     position: relative;
     width: 100%;
     height: 350px;
+
     img {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -317,6 +335,7 @@ main {
         height: 100%;
     }
 }
+
 .middleButton {
     position: absolute;
     font-size: 1.1rem;
@@ -328,7 +347,9 @@ main {
     left: 5%;
     color: white;
     border: none;
+    cursor: pointer;
 }
+
 .textPart {
     padding: 20px;
     background-color: white;
@@ -336,14 +357,17 @@ main {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+
 .storyTitle {
     font-size: 2rem;
 }
+
 .storyDescription {
     font-size: .9rem;
     padding-top: 8px;
     padding-bottom: 25px;
 }
+
 .miniStoriesContainer {
     width: 49%;
     display: grid;
@@ -351,10 +375,12 @@ main {
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
 }
+
 .miniStories {
     width: 100%;
     height: 270px;
 }
+
 .storyTitleMini {
     font-size: 1.3rem;
     margin-top: 15px;
@@ -383,7 +409,8 @@ main {
     background-color: white;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    h2{
+
+    h2 {
         padding-top: 5px;
     }
 }
@@ -399,17 +426,20 @@ main {
     top: 90%;
     left: 5%;
     border: none;
+    cursor: pointer;
 }
-.extra{
+
+.extra {
     margin-top: 50px;
 }
 
-footer{
-    width: 100%;    
-    background-color:#01ACFD;
+footer {
+    width: 100%;
+    background-color: #01ACFD;
 
 }
-.footerInfo{
+
+.footerInfo {
     color: white;
     width: 75%;
     padding: 50px 0;
@@ -419,83 +449,64 @@ footer{
     justify-content: space-between;
     align-items: flex-start;
 }
-.footerDescription{
+
+.footerDescription {
     width: 300px;
     text-align: left;
 }
-.footerTitle{
+
+.footerTitle {
     width: 150px;
     display: flex;
     justify-content: space-between;
     align-content: flex-start;
     margin-bottom: 15px;
-    h2{
+
+    h2 {
         padding-top: 8px;
         font-size: 1.6rem;
         font-weight: 700;
     }
 }
 
-.aboutSchool{
+.aboutSchool {
     text-align: left;
 }
-.aboutSchool > h1{
+
+.aboutSchool>h1 {
     margin-bottom: 15px;
 }
-.aboutSchool > ul > li{
-    
+
+.aboutSchool>ul>li {
+
     list-style: none;
     margin-bottom: 10px;
 }
-.images > img{
+
+.images>img {
     padding-right: 5px;
 }
-.contactUs{
+
+.contactUs {
     text-align: left;
 }
-.contactUs > h1{
+
+.contactUs>h1 {
     margin-bottom: 15px;
 }
-.marqueeText{
+
+.marqueeText {
     padding-top: 20px 0;
     color: white;
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width:576px) {
-    main{
+    main {
         width: 96.5vw;
     }
+
     .navName,
     .navItemContainer,
     .contactButton,
@@ -509,9 +520,6 @@ footer{
 
     .navigationBar {
         width: 90%;
-        /* display: flex;
-        justify-content: space-between;
-        align-items: center; */
     }
 
     .banner {
@@ -541,6 +549,11 @@ footer{
         flex-direction: column;
     }
 
+    .standardCurriculum {
+        background-size: contain;
+
+    }
+
     .curriculumBox {
         width: calc(100% - 40px);
         margin-bottom: 10px;
@@ -551,36 +564,46 @@ footer{
         padding-bottom: 40px;
         font-size: 2rem;
     }
-    .storiesContainer{
+
+    .storiesContainer {
         margin-top: 15px;
         width: calc(90% - 40px);
     }
-    .storyTitleMini{
+
+    .storyTitleMini {
         font-size: 1.1rem;
     }
-    .middleButtonMini{
+
+    .middleButtonMini {
         padding: 5px 5px;
     }
-    .miniStoriesContainer{
+
+    .miniStoriesContainer {
         width: 100%;
     }
-    .miniStories{
+
+    .miniStories {
         margin-bottom: 20px;
     }
-    .textPartMini{
+
+    .textPartMini {
         padding-top: 15px;
         padding-bottom: 5px;
     }
-    .extra{
+
+    .extra {
         margin-top: 60px;
     }
-    .footerInfo{
+
+    .footerInfo {
         flex-direction: column;
     }
-    .lastWords{
+
+    .lastWords {
         margin-bottom: 30px;
     }
-    .aboutSchool > ul{
+
+    .aboutSchool>ul {
         margin-bottom: 30px;
     }
 
@@ -597,5 +620,5 @@ footer{
 
 
 
- 
+
 }
