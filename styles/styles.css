@@ -510,7 +510,8 @@ footer {
     .navName,
     .navItemContainer,
     .contactButton,
-    .bigStory {
+    .bigStory,
+    .specialButtonsContainer {
         display: none;
     }
 
@@ -576,6 +577,7 @@ footer {
         padding-right: 5px;
         font-size: 1.1rem;
     }
+
     .middleButtonMini {
         padding: 5px 5px;
     }
