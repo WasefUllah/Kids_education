@@ -144,7 +144,7 @@ nav {
     padding: 0;
 }
 main {
-    width: 98.8vw;
+    width: 100%;
     margin: 0 auto;
 }
 .contactButton:hover, .specialButton:hover{
@@ -283,33 +283,16 @@ main {
     border-radius: 50px;
     border: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 .ourStories {
     background-image: url('../assets/bg.png'), linear-gradient(to top, #fea10156, white);
     width: 100%;
     background-size: cover;
     text-align: center;
     padding: 50px 0 20px 0;
-
     h1 {
         font-size: 3rem;
     }
-
-    /* background-image: ; */
 }
-
 .storiesContainer {
     /* padding-top: 25px; */
     /* margin-bottom: 80px; */
@@ -320,11 +303,9 @@ main {
     align-items: flex-start;
     border-radius: 10px;
 }
-
 .bigStory {
     width: 48%;
 }
-
 .imgPart {
     position: relative;
     width: 100%;
@@ -334,11 +315,8 @@ main {
         border-top-right-radius: 10px;
         width: 100%;
         height: 100%;
-        
     }
 }
-
-
 .middleButton {
     position: absolute;
     font-size: 1.1rem;
@@ -351,7 +329,6 @@ main {
     color: white;
     border: none;
 }
-
 .textPart {
     padding: 20px;
     background-color: white;
@@ -359,17 +336,14 @@ main {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-
-.storyTilte {
+.storyTitle {
     font-size: 2rem;
 }
-
 .storyDescription {
     font-size: .9rem;
     padding-top: 8px;
     padding-bottom: 25px;
 }
-
 .miniStoriesContainer {
     width: 49%;
     display: grid;
@@ -377,13 +351,11 @@ main {
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
 }
-
 .miniStories {
     width: 100%;
     height: 270px;
 }
-
-.storyTilteMini {
+.storyTitleMini {
     font-size: 1.3rem;
     margin-top: 15px;
     margin-left: 15px;
@@ -407,12 +379,10 @@ main {
     text-align: left;
     border: 1px solid rgba(0, 0, 0, 0);
     height: 40%;
-    /* padding: 0px 15px 0 0px; */
     font-size: 0.9rem;
     background-color: white;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    /* padding-bottom: 20px; */
     h2{
         padding-top: 5px;
     }
@@ -437,7 +407,6 @@ main {
 footer{
     width: 100%;    
     background-color:#01ACFD;
-    /* height: auto; */
 
 }
 .footerInfo{
@@ -467,13 +436,13 @@ footer{
     }
 }
 
-.aboutScool{
+.aboutSchool{
     text-align: left;
 }
-.aboutScool > h1{
+.aboutSchool > h1{
     margin-bottom: 15px;
 }
-.aboutScool > ul > li{
+.aboutSchool > ul > li{
     
     list-style: none;
     margin-bottom: 10px;
@@ -487,7 +456,12 @@ footer{
 .contactUs > h1{
     margin-bottom: 15px;
 }
-
+.marqueeText{
+    padding-top: 20px 0;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
 
 
 
@@ -579,9 +553,9 @@ footer{
     }
     .storiesContainer{
         margin-top: 15px;
-        width: calc(100% - 40px);
+        width: calc(90% - 40px);
     }
-    .storyTilteMini{
+    .storyTitleMini{
         font-size: 1.1rem;
     }
     .middleButtonMini{
@@ -606,7 +580,7 @@ footer{
     .lastWords{
         margin-bottom: 30px;
     }
-    .aboutScool > ul{
+    .aboutSchool > ul{
         margin-bottom: 30px;
     }
 
